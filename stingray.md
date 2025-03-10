@@ -36,7 +36,7 @@
 
 ---  
 
-## 4. **Install Dependencies**  
+## 3. **Install Dependencies**  
 - **If `requirements.txt` is available:**  
   ```sh  
   pip install -r requirements.txt  
@@ -60,7 +60,7 @@
     ```  
 ---  
 
-## 5. **Install the Project (Local Setup)**  
+## 4. **Install the Project (Local Setup)**  
 ```sh  
 pip install -e .  
 ```  
@@ -68,7 +68,7 @@ pip install -e .
 
 ---  
 
-## 6. **Select the Correct Python Interpreter in VS Code**  
+## 5. **Select the Correct Python Interpreter in VS Code**  
 - **If the virtual environment does not activate:**  
   1. **Open VS Code**  
   2. Press **CTRL + SHIFT + P**  
@@ -83,7 +83,7 @@ pip install -e .
 
 ---  
 
-## 7. **Run the Code**  
+## 6. **Run the Code**  
 
 ### **Method 1: Python Interactive Shell**  
 In Terminal:
@@ -122,12 +122,37 @@ python
 
 ---  
 
+## **7. Run Tests**
+If you want to check whether everything is installed correctly, run in terminal:
+```bash
+pytest
+```
+If `pytest` is not installed, run:
+```bash
+pip install pytest
+pytest
+```
+
+### **Issue Analysis & Solution**
+If `pytest` fails due to an unknown config option called `astropy_header`, it means:
+
+1. An outdated or incompatible version of `pytest-astropy` is installed.
+2. Your pytest configuration files (`pyproject.toml`, `pytest.ini`, or `conftest.py`) contain an invalid entry for `astropy_header`.
+
+### **🛠 Steps to Fix**
+✅ **1. Upgrade `pytest` and related packages**  
+Run the following command inside your virtual environment:
+```bash
+pip install --upgrade pytest pytest-astropy astropy
+```
+Then, try running the tests again:
+```bash
+pytest
+```
+
 ## 8. **Additional Resources**  
 - **Stingray GitHub Repo:** [StingraySoftware/Stingray](https://github.com/StingraySoftware/Stingray)  
 - **Documentation:** [Stingray Docs](https://stingray.readthedocs.io/)  
 - **Issues & Discussions:** [GitHub Issues](https://github.com/StingraySoftware/Stingray/issues)  
 
-- **If an error occurs:**  
-  - Check logs  
-  - Reinstall dependencies  
-```
+
