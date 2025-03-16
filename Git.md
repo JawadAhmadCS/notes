@@ -184,6 +184,11 @@ If there are any conflicts, resolve them manually and then:
 git add .  
 git commit -m "Merged upstream changes"  
 ```  
+Agar git pull nahi ho raha, toh force overwrite karo:
+```
+git fetch origin
+git reset --hard origin/main```
+⚠ Isse sare local changes bhi remove ho jayenge!
 
 ## 10. Other Useful Commands
 ### Clearing Terminal
