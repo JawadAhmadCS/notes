@@ -185,17 +185,22 @@ git add .
 git commit -m "Merged upstream changes"  
 ```  
 Agar git pull nahi ho raha, toh force overwrite karo:
-```
+
+```bash
 git fetch origin
-git reset --hard origin/main```
+git reset --hard origin/main
+```
+
 ⚠ Isse sare local changes bhi remove ho jayenge!
 
 ## 10. Other Useful Commands
 ### Clearing Terminal
 Clears the terminal screen
+
 ```bash
 clear  
 ```
+
 ### Listing Files in a Directory
 Shows all files in the directory
 ```bash
