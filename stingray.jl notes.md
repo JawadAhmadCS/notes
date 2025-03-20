@@ -32,4 +32,8 @@ Make sure you have Julia 1.7.0 installed. You can download it from the following
    ```julia
    using Pkg
    Pkg.test("Stingray")
+
+# CheetSheet
+```
+include("docs/make.jl")
    ```
