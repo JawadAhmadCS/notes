@@ -37,3 +37,7 @@ Make sure you have Julia 1.7.0 installed. You can download it from the following
 ```
 include("docs/make.jl")
    ```
+
+```
+include("test/test_lightcurve.jl")
+```
