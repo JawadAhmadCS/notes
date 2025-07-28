@@ -316,3 +316,44 @@ For more [see](https://youtu.be/Ez8F0nW6S-w?si=OXPF4o0uX75L0PQG)
 
 This **README.md** file contains a summary of important Git commands.
 
+
+
+## ✅ Step-by-Step: Add Git to Environment Variables
+
+### 🔧 Step 1: Open Environment Variables
+1. Start menu me search karo:  
+   **Edit the system environment variables**  
+   (ya Run me type karo: `sysdm.cpl`)
+
+2. Ek window open hogi — neeche click karo:  
+   **Environment Variables...**
+
+---
+
+### 🔧 Step 2: Add Git Path to `Path` Variable
+1. Under **System Variables**, `Path` ko select karo  
+   → Click **Edit**
+
+2. Click **New**
+
+3. Paste this path:
+`E:\Program Files\Git\cmd`
+
+
+4. Click **OK → OK → OK** to close all dialogs.
+
+---
+
+### 🔁 Step 3: Restart VS Code
+1. **VS Code completely close karo** (poora quit)
+2. Dubara open karo
+3. Terminal open karo: `Ctrl + ~`
+4. Type:
+
+```bash
+git --version
+
+
+
+
+
